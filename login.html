@@ -284,7 +284,7 @@
         <a href="./index.html#donate" class="nav-link">Donate</a>
         <a href="./view.html" class="nav-link">Available Foods</a>
         <a href="./contact.html" class="nav-link">Contact</a>
-        <a href="./login.html" class="nav-link btn-login">Login</a>
+        <a href="/login.html" class="nav-link btn-login">Login</a>
       </nav>
 
       <button id="burger" class="burger" aria-label="Open menu" aria-expanded="false">
@@ -333,6 +333,14 @@
       <input type="text" id="regName" placeholder="Full Name" required>
       <input type="email" id="regEmail" placeholder="Email" required>
       <input type="password" id="regPass" placeholder="Password" required>
+            <label class="field">
+              <select id="d_address" required>
+                <option value="">Select Type</option>
+                <option value="Donar">Donar</option>
+                <option value="Receiver">Receiver</option>
+                <option value="NGO">NGO</option>
+              </select>
+            </label>
       <button type="submit" class="btn">Register</button>
       <div class="toggle-text">Already have an account? <a href="#" id="showLogin">Login</a></div>
     </form>
@@ -402,4 +410,3 @@
   <script src="script.js"></script><script src="auth.js"></script>
 </body>
 </html>
-
