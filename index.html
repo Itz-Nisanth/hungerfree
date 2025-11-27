@@ -129,7 +129,7 @@
     <section id="about" class="section about">
       <div class="container about-grid">
           <div class="about-media" data-aos="fade-right">
-          <img src="./ngo.webp" alt="Community sharing" >
+          <img src="./img.jpg" alt="Community sharing" >
         </div>
         <div class="about-body" data-aos="fade-left">
           <h2 class="center-title">About HungerFree</h2>
@@ -143,6 +143,33 @@
         </div>
 
       
+      </div>
+
+      <div class="container about-grid" style="margin-top: 2.5rem;">
+
+        <div class="about-body" data-aos="fade-left">
+          <h2 class="center-title">Our NGO's</h2>
+          <p class="lead">Our trusted NGO partners ensure safe, swift distribution of every donated meal.
+They transform community generosity into daily nourishment for thousands.</p>
+
+          <div class="about-features">
+            <div class="feature"><i class="fa-solid fa-check icon"></i><p>Ensure safe and hygienic handling of every donated meal.</p></div>
+            <div class="feature"><i class="fa-solid fa-check icon"></i><p>Provide fast and reliable last-mile delivery to communities in need.</p></div>
+            <div class="feature"><i class="fa-solid fa-check icon"></i><p>Maintain transparent processes to maximize real, measurable impact.</p></div>
+          </div>
+        </div>
+
+
+          <div class="about-media" data-aos="fade-right">
+          <img src="./ngo.webp" alt="Community sharing" >
+        </div>
+        
+
+      
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 2rem;">
+        <img src="./darpan-logo.png" alt="darpan">
+      <h1 style="text-align: center; font-size: 1.3rem; margin-top: 0rem;">Every NGO on HungerFree is carefully vetted and Darpan-verified for your trust and safety.</h1>
       </div>
     </section>
 
@@ -255,13 +282,16 @@
               </select>
             </label>
             <label class="field"><span>Quantity</span><input id="d_qty" type="text" placeholder="e.g. 10 meals / 5 boxes" required /></label>
-          </div>
-
-          <label class="field full"><span>Pickup address / landmark</span><input id="d_address" type="text" placeholder="Street, building, closest landmark" required /></label>
-
-          <div class="row small">
-            <label class="field"><span>Expiry / Pickup time</span><input id="d_expiry" type="text" placeholder="e.g. 6 hours / Today 14:30" required /></label>
-            <button id="useLoc" type="button" class="btn ghost">Use my city</button>
+            <label class="field">
+              <span>Pickup address / landmark</span>
+              <select id="d_address" required>
+                <option value="">Select City</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </label>
           </div>
 
           <div class="form-actions" style="margin-top: 1rem; margin-bottom: 0.5rem;">
@@ -351,7 +381,6 @@
 
 </body>
 </html>
-
 
 
 
